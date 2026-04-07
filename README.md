@@ -51,7 +51,7 @@ git push -u origin master --force --tags
 If we do not want to remove .env file but replace api key value with dummy value then use below process.
 
 ```bash
-Create a file replace.txt with value API_KEY = sdbf46nwhgdwk8739nfbsn4jy==>API_KEY=test
+Create a file replace.txt with value API_KEY = sdbf46nwhgdwk8739nfbsn4jy==>API_KEY=test in to your working machine and run below command
 git filter-repo --replace-text replace.txt
 git remote add origin git@github.com:kelvinmanavar/secret-remove.git
 git push origin master --force --tags
